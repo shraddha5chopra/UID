@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp Page</title>
+</head>
+
+<style>
+fieldset 
+{
+  color:white;
+  font-size:20px;
+  display: block;
+  margin-top: 5px;
+  margin-left: 870px;
+  margin-right: 5px;
+}
+</style>
+
+<script>  
+function validate()
+{  
+var first=document.myform.fname.value; 
+var last=document.myform.lname.value; 
+var pw=document.myform.pw.value;
+var id = document.myform.email.value;
+var addres = document.myform.addr.value;
+var atpos = id.indexOf("@");
+var dotpos = id.lastIndexOf(".");
+var pc=document.myform.pin.value;
+var state = document.getElementById("state");
+var country = document.getElementById("country");
+var letters = /^[A-Za-z]+$/;
+var alphanumeric= /^[-_ a-zA-Z0-9]+$/;
+var passwrd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,40}$/;
+
+if (first.length<3 || last.length<3)
+{  
+  alert("First Name and Last Name should be greater than 3 alphabets");
+  return false;  
+}
+
+if (!first.match(letters) || !last.match(letters))
+{
+  alert('Please enter only alphabets for First and Last Name');
+  return false;
+}
+
+if(id="" || atpos < 1 || (dotpos-atpos<2))
+{
+alert('Please enter a valid E-Mail Address');  
+return false; 
+}
+
+if(!pw.match(passwrd) || pw.length<6)
+{
+alert('The Password must have minimum 6 to 9 characters which should contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character');
+return false;
+}
+
+if(!(pc.length == 6))
+{
+alert('The pincode must be 6 numeric digits');
+return false;
+}
+
+if(!addres.match(alphanumeric))
+{
+alert('The address must consist of only alphanumeric characters i.e. house no. & address');
+return false;
+} 
+
+if (state.value == "") 
+{
+alert("Please select a State!");
+return false;   
+}
+
+if (country.value == "") 
+{
+alert("Please select a Country!");
+return false;   
+}
+
+if (!document.getElementById('license').checked) 
+{
+ alert("Please tick the license agreement checkbox");
+ return false;
+}
+
+}
+</script>  
+	
+<body background = "https://d3d5bpai12ti8.cloudfront.net/wp-content/uploads/20200911134852/Rajasthan-Approves-New-Tourism-Policy-With-Focus-On-Lesser-known-Destinations.jpg">
+
+<form name="myform" method="POST" action="#" onsubmit="return validate();">
+<fieldset>
+<legend><b><u><h3>Details</h3></u></b></legend>
+
+<table cellspacing="20">
+
+<tr>
+    <td><label>First name: </label></td>
+    <td><input type="text" id="fname" name="fname"></td>   
+</tr>
+
+<tr> 
+    <td><label> Last name: </label></td>
+    <td><input type="text" id="lname" name="lname"></td>
+</tr>
+
+<tr>
+    <td><label>Email: </label></td>
+    <td><input type="email" id="email" name="email"></td>
+</tr>
+
+<tr>
+    <td><label>Password: </label></td>
+    <td><input type="password" id="pw" name="pw"></td>
+</tr>
+
+<tr>
+    <td><label>Pin Code:</label></td>
+    <td><input type="number" id="pin" id="pin" name="pin"></td>
+</tr>
+
+<tr>
+    <td><label>Address:</label></td>
+    <td><input type="text" id="addr" name="addr"></td>
+</tr>
+
+<tr>
+    <td><label>State: </label></td>
+    <td><select id="state"><option value="">(please select a state)</option>
+                              <option> England </option>
+                              <option> California </option>
+                              <option> Denmark </option>
+                              <option> Tamil Nadu </option>
+                              <option> Others </option>
+                              </select>
+   </td>
+</tr>
+
+<tr>
+    <td><label>Country: </label></td>
+    <td><select id="country"><option value="">(please select a country)</option>
+                              <option> UK </option>
+                              <option> USA </option>
+                              <option> Europe </option>
+                              <option> India </option>
+                              <option> Others </option>
+                              </select>
+   </td>
+</tr>
+
+</table><br>
+
+<input type="checkbox" class="check" id="license" name="license agreement">
+By filling the above form I agree to the <a href="#">Terms & Conditions</a> applied
+</input>
+
+<p style="text-align: center;"><input type="submit" value="Submit"></p>
+
+</fieldset>
+</form>
+</body>
+</html>

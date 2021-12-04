@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assam</title>
+    <link rel="stylesheet" href="lehstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Assam</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/originals/4b/d6/47/4bd647a2629a0c063cddc0076eb8b3c7.jpg");
+    min-height: 140vh;
+}
+
+center p{
+    font-family: 'Maiandra GD';
+    color: rgba(247,233,153,1);
+}
+
+p2
+{
+color:aliceblue;
+border-style: inset;
+font-size:larger;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Mongolin' curisve;
+    color:maroon;
+}
+p{
+    font-size: 20px;
+    color: rgb(2, 66, 66);
+}
+body {
+  box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+*/#main-navbar {
+  font: 1.5em;
+  background:black;
+ 
+}*/
+
+/*------*/
+#conta {
+    position: absolute;
+    top: -20px;
+    width:1200px;
+    margin:5% auto;
+}
+#conta > nav {
+  width:100%;
+  display:flex;
+  max-height:60px;
+}
+#logo {
+  position: absolute;
+  line-height:60px;
+  font-size:40px;
+  padding: 0 370px;
+  color:aliceblue;
+  width:45%;
+  letter-spacing:2px;
+  font-weight: bolder;
+}
+#conta > nav > ul {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  display:flex;
+  position:absolute;
+    right:50px;
+    font-size: larger;
+
+}
+#conta > nav > ul > li {
+  line-height:60px;
+  margin: 0 0px;
+  padding:0;
+  text-align:center;
+  display:inline-block;
+  
+/*   background-color:lightblue; */
+  min-width:120px;
+
+} 
+#conta > nav > ul > li > a {
+  position:relative;
+/*   background-color:red; */
+  margin: 0 20px;
+    color:aliceblue;
+}
+#conta > nav > ul > li:hover {
+  border-bottom: 2px solid lightblue;
+  background-color: lightblue;
+}
+#conta > nav > ul > .dropdown:hover {
+  border-bottom:none;
+}
+#conta > nav > ul > .dropdown:hover >  .dd
+{
+  display:inline-block;
+  
+  
+}
+.dropdown:hover > a .fa-caret-down {
+  display:none;
+}
+a {
+  text-decoration:none;
+
+}
+
+#conta > nav > ul > li > div {
+  position:absolute;
+  padding: 0 10px; 
+  background-color:lightblue;
+  display:none;
+  background-color:aliceblue;
+  min-width:100px;
+}
+
+#conta > nav > ul > li > div > ul {
+  margin:0px 0 10px 0;
+  padding:0;
+  list-style:none;
+}
+#u_a_c {
+  position:relative;
+  width:100%;
+/*   background-color:red; */
+}
+#up_arrow {
+  position:relative;
+  width:20px;
+  height:20px;
+  left:1%;
+  top:-10px;
+  background-color:aliceblue;
+  transform:rotate(45deg);
+}
+#conta > nav > ul > li> div > ul > li:hover {
+  background-color:lightblue;
+}
+#conta > nav > ul > li > div > ul > li > a {
+  padding : 5px;
+  color:lightblue;
+}
+	
+
+.container{
+    margin-top: 150px;
+    position: relative;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    background:aliceblue;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: teal;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.content h2{
+    font-size: 30px;
+    font-family: 'Maiandra GD';
+    padding-bottom: 10px;
+    color:teal;
+}
+.content p{
+    font-size: 15px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    color:cadetblue;
+}
+
+.btn{
+    margin: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: lightblue;
+    border: 1px solid rgb(12,100,53);
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.testimonials{
+  padding: 40px 0;
+  background: lightblue;
+  color: lightblue;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: lightblue;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: aliceblue;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color:lightblue;
+  margin-bottom: 20px;
+}  
+  .copy p {
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 50px;
+  color:green;
+  font-weight: bolder ;
+  font-family: cursive;
+  font-size: 1.25em;
+  }
+  @media only screen and (max-width:600px){
+    .foot1{
+      width:320px;
+    }
+    .footer-wave-box {
+      display: none;
+    }
+    .single-footer:first-child, .single-footer {
+      width: 100%;
+      margin-bottom:30px;
+    }
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+    :root {
+      --text-color: hsla(210, 50%, 85%, 1);
+      --shadow-color: hsla(210, 40%, 52%, .4);
+      --btn-color: hsl(210, 80%, 42%);
+      --bg-color: green;
+    } 
+    #btt {
+      width: 500px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 33%;
+      background-color: var(--bg-color);
+    }
+    
+    button {
+      position:relative;
+      padding: 10px 20px;  
+      border: none;
+      background: none;
+      cursor: pointer;
+      
+      font-family: "Source Code Pro";
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 30px;  
+      color: var(--text-color);
+      
+      background-color: green;
+      box-shadow: var(--shadow-color) 2px 2px 22px;
+      border-radius: 4px; 
+      z-index: 0;  
+      overflow: hidden;   
+    }
+    
+    button:focus {
+      outline-color: transparent;
+      box-shadow: var(--btn-color) 2px 2px 22px;
+    }
+    
+    .right::after, button::after {
+      content: var(--content);
+      display: block;
+      position: absolute;
+      white-space: nowrap;
+      padding: 40px 40px;
+      pointer-events:none;
+    }
+    
+    button::after{
+      font-weight: 200;
+      top: -30px;
+      left: -20px;
+    } 
+    
+    .right, .left {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+    .right {
+      left: 66%;
+    }
+    .left {
+      right: 66%;
+    }
+    .right::after {
+      top: -30px;
+      left: calc(-66% - 20px);
+      
+      background-color: var(--bg-color);
+      color:transparent;
+      transition: transform .4s ease-out;
+      transform: translate(0, -90%) rotate(0deg)
+    }
+    
+    button:hover .right::after {
+      transform: translate(0, -47%) rotate(0deg)
+    }
+    
+    button .right:hover::after {
+      transform: translate(0, -50%) rotate(-7deg)
+    }
+    
+    button .left:hover ~ .right::after {
+      transform: translate(0, -50%) rotate(7deg)
+    }
+    
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.anim-border {
+    position: relative;
+    z-index: 0;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.3rem;
+}
+.anim-border::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 10%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(white, white);
+    -webkit-animation: rotate 4s linear infinite;
+    animation: rotate 4s linear infinite;
+}
+.anim-border::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 3px;
+  width: calc(100% - 12px);
+  height: calc(100% - 5px);
+  background: cadetblue;
+  border-radius: 5px;
+} 
+.anim-border img {
+    width: 100%;
+    height:50%;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#a2 {
+  width: auto;
+  height: auto;
+  background-color: white;
+  position: relative;
+  animation-name: click;
+  animation: click 5s infinite;
+}
+
+@keyframes click 
+{
+  0%   {background-color:lightsteelblue; }
+  25%  {background-color:cadetblue; }
+  50%  {background-color:lightsteelblue;}
+  75%  {background-color:cadetblue; }
+  100% {background-color:lightsteelblue;}
+}
+</style>
+</head>
+<body img src="https://i.pinimg.com/originals/4b/d6/47/4bd647a2629a0c063cddc0076eb8b3c7.jpg">
+    <div id="conta">
+          <div id="logo">
+          <center><div class="anim-border">Assam Tourism</div></center>
+          </div><br><br><br>
+         <nav>
+          <ul>
+            <li><a href="#Z1">Places to visit</a></li> 		
+	    <li><a href="#Z2">Travel Details</a></li>   
+            <li><a href="#footer">Helpdesk</a></li>  
+              </ul>
+              </div>
+              </li>
+              </ul>
+              </div>
+          </ul>
+        </nav>
+      </div>
+
+    <div id="attr">
+<br><br><br><br><br><br><br><br><br>
+    <div class="container">
+<br><br><br><br><br><br><br><br><br>
+        <div class="card">
+            <div class="imgBx">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQGagSj-KtGpX6qBOpjfrBCKo3Mn8QUgACUqTykHTteKxYkqPpa2Au1dEKdKfZgXoexLk1OZD7Ro6k32XCTZN-CFQ" id="Z1" alt="">
+            </div>
+            <div class="content">
+                <h2>Dipor Bil</h2>
+                <p>Dipor Bil, also spelt Deepor Beel, is located to the south-west of Guwahati city, in Kamrup Metropolitan district of Assam, India. It is a permanent freshwater lake, in a former channel of the Brahmaputra River, to the south of the main river.
+                <br><br>
+                </p>
+                <a  target="_blank" href="https://en.wikipedia.org/wiki/Dipor_Bil" class="btn">Visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTz66GMxL7Kowek38QHOQO2_4zujdTv7MIWTygm4ylycsu4NNHC-TutbZ74nv-YFCuZzgWTMtr_cxGzA8H5UFEskw" id="spi" alt="">
+            </div>
+            <div class="content">
+                <h2>Peacock Island</h2>
+                <p>Umananda Island is the smallest inhabited river islet in the middle of river Brahmaputra, flowing through the city of Guwahati in Assam, a state in northeast India. Its name derives from Assamese Uma, another name for the Hindu goddess Parvati, the wife of Shiva; and ananda, "joy".  
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Umananda_Island" class="btn">Visit</a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<marquee><p2 id="Z2">You may select your preferred living facilities, travel options, places to visit and things to do based on the options given</p2></marquee>
+<br><br>
+<center><iframe src="https://www.tripadvisor.in/Tourism-g297590-Assam-Vacations.html" target="_blank" width="800" height="800"></iframe></center><br>
+<br><br> <br><br> <br><br> <br><br>    
+<footer id="footer">
+<br><br> <br><br> <br><br>
+<center><h3><p style="color:white"><b><u>HELPLINE</u></b></p></h3></center><br>
+<marquee direction="left"><p style="color:lightblue"><b><i><h3 id="a2">FOR ANY QUERIES CONTACT THE FOLLOWING PHONE NUMBER = 1890784302</h3></i></b></p></marquee>
+<p style="color:lightblue"><b><i>To talk to our virtual help desk assistant <a href = "https://secure.booking.com/help.en-gb.html?aid=318615&amp;label=Low_CPA_English_EN_IN_21456998305-Fa_C6hqh3WevFJgFDRL8NQS217247227677%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&amp;sid=fa07f7e9fb7e310f51997546a3124410&amp;source=lp_header_block#/?source=lp_header_block">click here </a></i></b></p>
+</footer>
+    
+</div>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init( 
+       // {offset: 350,
+         //   duration: 800
+  //}
+      );
+    </script>
+    
+</body>
+</html>
